@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:white;">
+<h1>Welcome to voice to visual</h1>
+<h2>Let's see {{value}}</h2>
+
+<div>
+    {% for image in images %}
+    <img src="{{url_for('static', filename=image)}}" alt={{image}} height="600px" width="600px"/>
+    {% endfor %}
+</div>
+
+
+
+</body>
+</html>
